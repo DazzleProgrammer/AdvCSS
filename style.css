@@ -1,0 +1,64 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    /* transform:rotate(-120deg);  */
+    /* transform: scale(1.4,0.5); */
+    /* transform: translate(10%, 200px); */
+    top: 20%;
+    left: 20%;
+    position: absolute;
+    /* transition: height 1s ease-in-out 1s; */
+    /* transition: 1s ease-in-out; */
+    transition: 1s steps(4, end);
+}
+
+.box:hover{
+   transform: scale(1.5) translate(150px);
+/*    
+    height: 400px;
+    width: 300px; */
+    /* transition: 1s ease-in-out; */
+}
+
+
+/* Transition */
+/* linear: eaqual distance in equal time */
+/* ease-in-out: start smoothly end smoothly */
+/* steps: in how many steps we want transition */
+
+
+/* Transform */
+/* rotate() => +ve = clockwise direction ; -ve = anti-clockwise direction  */
+/* rotateX() ; rotateY() for rotating single axis */
+/* scale() => size increase or decrease */
+/* translate() => position setting axis wise */
+
+
+
+/* ========================= Shape ========================== */
+
+.shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: peachpuff;
+    animation: changeShape 1s linear infinite alternate;
+}
+
+@keyframes changeShape{
+    from{
+        border-radius: 0%;
+    }
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    to{
+        border-radius: 50%;
+    }
+}
